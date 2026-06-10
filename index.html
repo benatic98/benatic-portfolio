@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benatic Vasanth A | Frontend Developer & UI Consultant</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio of Benatic Vasanth A, Frontend Developer & UI Consultant with 5 years experience specializing in Vue.js, enterprise web apps, and performance optimization.">
+    <meta name="keywords"
+        content="Frontend Developer, UI Consultant, Vue.js, Vue, Chennai, India, Enterprise Applications, Web Development, Portfolio">
+    <meta name="author" content="Benatic Vasanth A">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Ambient glowing backgrounds -->
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                Benatic<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#why-hire">What I Bring</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- Mobile Only Resume Link -->
+                <li class="mobile-resume" style="display: none;">
+                    <a href="assets/resume.pdf" download class="btn btn-primary btn-sm">
+                        <i class="fa-solid fa-download"></i>
+                        Download Resume
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="assets/resume.pdf" download class="btn btn-secondary btn-sm" id="nav-resume-btn">
+                    <i class="fa-solid fa-download"></i>
+                    Download Resume
+                </a>
+                <button class="menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="section-container">
+            <div class="hero-grid">
+                <div class="hero-content reveal-on-scroll">
+                    <!-- International Opportunities Badge -->
+                    <div class="badge-international">
+                        <span class="pulse-dot"></span>
+                        Open to International Opportunities (Germany, NL, IE, SG, UAE & Remote)
+                    </div>
+
+                    <h1 class="hero-title text-gradient">Benatic Vasanth A</h1>
+                    <p class="hero-subtitle">Frontend Developer & UI Consultant</p>
+                    <p class="hero-tagline">
+                        Frontend professional with 4+ years of experience delivering enterprise web applications,
+                        analytics dashboards, procurement systems, and business-critical platforms. Focused on scalable
+                        architecture, performance optimization, and exceptional user experiences.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            View Projects
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="assets/resume.pdf" download class="btn btn-secondary">
+                            <i class="fa-solid fa-download"></i>
+                            Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/benatic-vasanth/" target="_blank"
+                            aria-label="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/BenticVasanth" target="_blank" aria-label="GitHub Profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:benatic98@gmail.com" aria-label="Send Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image-frame">
+                        <img src="assets/Ben_LinkedIn_Cover.png" alt="Benatic Vasanth A Profile"
+                            onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600'">
+                        <!-- Floating Glassmorphism Cards -->
+                        <div class="hero-floating-card">
+                            <div class="pulse-dot"></div>
+                            <div>
+                                <h4 style="font-size: 0.88rem; margin:0;">Vue.js Developer</h4>
+                                <p style="font-size: 0.72rem; color: var(--text-secondary); margin:0;">Web Apps &
+                                    Dashboards</p>
+                            </div>
+                        </div>
+                        <div class="hero-floating-card alt">
+                            <i class="fa-regular fa-circle-check" style="color: var(--primary);"></i>
+                            <div>
+                                <h4 style="font-size: 0.88rem; margin:0;">4+ Years Experience</h4>
+                                <p style="font-size: 0.72rem; color: var(--text-secondary); margin:0;">Frontend
+                                    Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recruiter Stats Banner -->
+    <section class="stats-banner">
+        <div class="stats-banner-container">
+            <div class="stat-item">
+                <div class="stat-value" data-target="4" data-suffix="+ Years">4+ Years</div>
+                <div class="stat-label">Professional Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">Vue.js</div>
+                <div class="stat-label">Core Specialty</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" data-target="7" data-suffix="+">7+</div>
+                <div class="stat-label">Enterprise Deliveries</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">Remote Ready</div>
+                <div class="stat-label">Global Opportunities</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-container">
+            <div class="section-title-wrapper reveal-on-scroll">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Frontend Developer & UI Consultant</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text reveal-on-scroll">
+                    <p>
+                        I am a Frontend Developer and UI Consultant with 4+ years of experience building secure,
+                        scalable, and high-performance web applications. Specializing in Vue.js and modern frontend
+                        technologies, I create intuitive user experiences that balance business requirements,
+                        performance, and maintainability.
+                    </p>
+                    <p>
+                        My experience includes developing enterprise procurement systems, government analytics
+                        dashboards, real-time bidding platforms, and educational ecosystems. I focus on translating
+                        complex business workflows into efficient, user-friendly interfaces while ensuring scalability,
+                        accessibility, and long-term product success.
+                    </p>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+
+                <div class="about-features reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3>Enterprise Apps</h3>
+                        <p>Designing and developing secure, scalable business applications with complex workflows,
+                            role-based access control, and data-driven user experiences.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="2" y1="12" x2="22" y2="12" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                        </div>
+                        <h3>Vue.js Expert</h3>
+                        <p>Strong expertise in Vue.js, Pinia, Vuex, Vuetify, and modern frontend architecture for
+                            enterprise-grade applications.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+                        </div>
+                        <h3>Performance Tuning</h3>
+                        <p>Improving application performance through code optimization, lazy loading, asset management,
+                            and responsive rendering strategies.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                                <polygon points="12 11 12 17 17 14" />
+                            </svg>
+                        </div>
+                        <h3>API Integration</h3>
+                        <p>Building seamless frontend experiences through robust REST API integration, state management,
+                            and real-time data handling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-container">
+            <div class="section-title-wrapper reveal-on-scroll">
+                <span class="section-tag">Showcase</span>
+                <h2 class="section-title">Selected Projects & Case Studies</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal-on-scroll" data-project="pm-mementos">
+                    <div class="project-img">
+                        <img src="assets/project-pm-mementos.png" alt="PM Mementos Dashboard">
+                        <div class="project-img-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-tag">E-Auction Portal</span>
+                            <span class="tech-tag">Mementos</span>
+                        </div>
+                        <h3>PM Mementos</h3>
+                        <p class="project-desc">A secure e-auction platform displaying real-time stateful bidding
+                            systems, live count-downs, and robust payment gateways.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Pinia</span>
+                            <span class="tech-tag">REST APIs</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-metrics">
+                                <span class="metric-num">1000+</span>
+                                <span class="metric-txt">Secure Bids</span>
+                            </div>
+                            <span class="project-link">
+                                Case Study
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal-on-scroll" data-project="crude-oil" style="transition-delay: 0.1s;">
+                    <div class="project-img">
+                        <img src="assets/project-crude-oil.png" alt="Crude Oil Procurement Platform">
+                        <div class="project-img-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-tag">Enterprise Portal</span>
+                            <span class="tech-tag">Indian Oil</span>
+                        </div>
+                        <h3>Crude Oil Procurement</h3>
+                        <p class="project-desc">Industrial e-procurement platform managing high-volume tender pipelines,
+                            audit histories, and file uploads.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Vuex</span>
+                            <span class="tech-tag">Vuetify</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-metrics">
+                                <span class="metric-num">1500+</span>
+                                <span class="metric-txt">Active Staff Users</span>
+                            </div>
+                            <span class="project-link">
+                                Case Study
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal-on-scroll" data-project="tn-dashboard" style="transition-delay: 0.2s;">
+                    <div class="project-img">
+                        <img src="assets/project-tn-dashboard.png" alt="TN Government Dashboard">
+                        <div class="project-img-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-tag">Gov Analytics</span>
+                            <span class="tech-tag">Tamil Nadu</span>
+                        </div>
+                        <h3>TN Dashboard</h3>
+                        <p class="project-desc">A centralized monitoring platform reporting district-level tender
+                            compliance and metrics to senior administration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Pinia</span>
+                            <span class="tech-tag">Sass</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-metrics">
+                                <span class="metric-num">-30%</span>
+                                <span class="metric-txt">API Overhead</span>
+                            </div>
+                            <span class="project-link">
+                                Case Study
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal-on-scroll" data-project="cancer-conference">
+                    <div class="project-img">
+                        <img src="assets/project-iit-cancer.png" alt="Cancer Conference website">
+                        <div class="project-img-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-tag">Event Portal</span>
+                            <span class="tech-tag">IIT Madras</span>
+                        </div>
+                        <h3>Cancer Conference</h3>
+                        <p class="project-desc">Fully responsive web layout hosting scientific panel schedules,
+                            abstracts submission, and registrations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Sass</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-metrics">
+                                <span class="metric-num">1200+</span>
+                                <span class="metric-txt">Submissions</span>
+                            </div>
+                            <span class="project-link">
+                                Case Study
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal-on-scroll" data-project="magnify" style="transition-delay: 0.1s;">
+                    <div class="project-img">
+                        <img src="assets/project-magnify.png" alt="E-Learning Dashboard">
+                        <div class="project-img-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-tag">E-Learning</span>
+                            <span class="tech-tag">Web Portal</span>
+                        </div>
+                        <h3>Magnify El-Shaddai</h3>
+                        <p class="project-desc">Faith-based educational ecosystem providing video streaming, interactive
+                            user profiles, and test engines.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Pinia</span>
+                            <span class="tech-tag">Vuetify</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-metrics">
+                                <span class="metric-num">5000+</span>
+                                <span class="metric-txt">Graduates</span>
+                            </div>
+                            <span class="project-link">
+                                Case Study
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-container">
+            <div class="section-title-wrapper reveal-on-scroll">
+                <span class="section-tag">Stack</span>
+                <h2 class="section-title">Technical Expertise & Core Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skills-category reveal-on-scroll">
+                    <h3>Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- Vue Logo SVG -->
+                                <i class="fa-brands fa-vuejs"></i>
+                                Vue.js
+                            </span>
+                            <span class="skill-status">Specialist</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- JS Logo SVG -->
+                                <i class="fa-brands fa-js"></i>
+                                JavaScript
+                            </span>
+                            <span class="skill-status">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- HTML5 -->
+                                <i class="fa-brands fa-html5"></i>
+                                HTML5
+                            </span>
+                            <span class="skill-status">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- CSS3 -->
+                                <i class="fa-brands fa-css3-alt"></i>
+                                CSS3
+                            </span>
+                            <span class="skill-status">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- Bootstrap -->
+                                <i class="fa-brands fa-bootstrap"></i>
+                                Bootstrap
+                            </span>
+                            <span class="skill-status">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- Vuetify -->
+                                <i class="fa-brands fa-vuejs"></i>
+                                Vuetify
+                            </span>
+                            <span class="skill-status">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- Sass -->
+                                <i class="fa-brands fa-sass"></i>
+                                SCSS / SASS
+                            </span>
+                            <span class="skill-status">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- State Management -->
+                <div class="skills-category reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <h3>State Management</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- Pinia (pineapple silhouette) -->
+                                <i class="fa-brands fa-vuejs"></i>
+                                Pinia
+                            </span>
+                            <span class="skill-status">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- Vuex -->
+                                <i class="fa-brands fa-vuejs"></i>
+                                Vuex
+                            </span>
+                            <span class="skill-status">Expert</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skills-category reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <h3>Tools & Databases</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- GitHub SVG -->
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </span>
+                            <span class="skill-status">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <i class="fa-solid fa-file-code"></i>
+                                JSON
+                            </span>
+                            <span class="skill-status">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- REST API -->
+                                <i class="fa-solid fa-layer-group"></i>
+                                REST APIs
+                            </span>
+                            <span class="skill-status">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- MSSQL Database -->
+                                <i class="fa-solid fa-database"></i>
+                                MSSQL
+                            </span>
+                            <span class="skill-status">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learning -->
+                <div class="skills-category reveal-on-scroll">
+                    <h3>Currently Learning</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- React Logo -->
+                                <i class="fa-brands fa-react"></i>
+                                React.js
+                            </span>
+                            <span class="skill-status"
+                                style="color: var(--accent); background: rgba(34, 197, 94, 0.08);">In Progress</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- Flutter Logo -->
+                                <i class="fa-brands fa-flutter"></i>
+                                Flutter
+                            </span>
+                            <span class="skill-status"
+                                style="color: var(--accent); background: rgba(34, 197, 94, 0.08);">In Progress</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">
+                                <!-- TypeScript Logo -->
+                                <i class="fa-brands fa-typescript"></i>
+                                TypeScript
+                            </span>
+                            <span class="skill-status"
+                                style="color: var(--accent); background: rgba(34, 197, 94, 0.08);">In Progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience">
+        <div class="section-container">
+            <div class="section-title-wrapper reveal-on-scroll">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2025 – Present</span>
+                        <h3>Frontend Developer & UI Consultant</h3>
+                        <p class="timeline-company">Expresso Life Solutions</p>
+                        <ul class="timeline-achievements">
+                            <li>Developed and maintained customer, partner, and operations applications for a digital
+                                laundry commerce platform.</li>
+                            <li>Built responsive web interfaces using React.js and Material UI.</li>
+                            <li>Designed reusable UI components and scalable frontend architectures.</li>
+                            <li>Implemented order management, service workflows, and real-time tracking features.</li>
+                            <li>Collaborated with cross-functional teams to deliver business-critical features and
+                                improve user experience.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Flutter</span>
+                            <span>React.js</span>
+                            <span>Typescript</span>
+                            <span>Material UI</span>
+                            <span>Firebase</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sep 2021 – Aug 2025</span>
+                        <h3>Frontend Developer</h3>
+                        <p class="timeline-company">CMS Computers India Pvt Ltd</p>
+                        <ul class="timeline-achievements">
+                            <li>Developed enterprise-grade web applications, government portals, and procurement
+                                platforms using Vue.js.</li>
+                            <li>Built reusable UI components and scalable frontend architectures for long-term
+                                maintainability.</li>
+                            <li>Improved application performance by 30% through optimization and code refactoring.</li>
+                            <li>Reduced production issues by 25% through testing, debugging, and UI validation.</li>
+                            <li>Delivered large-scale business and government solutions within strict timelines.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Vue.js</span>
+                            <span>JavaScript</span>
+                            <span>Vuetify</span>
+                            <span>Pinia</span>
+                            <span>Bootstrap</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements"
+        style="background: rgba(15, 23, 42, 0.2); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+        <div class="section-container">
+            <div class="section-title-wrapper reveal-on-scroll">
+                <span class="section-tag">PROFESSIONAL IMPACT</span>
+                <h2 class="section-title">Delivering Measurable Results</h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card reveal-on-scroll">
+                    <div class="achievement-num" data-target="7" data-suffix="+">0</div>
+                    <div class="achievement-label">Major Projects Delivered</div>
+                </div>
+                <div class="achievement-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="achievement-num" data-target="30" data-suffix="%">0</div>
+                    <div class="achievement-label">Performance Improvement</div>
+                </div>
+                <div class="achievement-card reveal-on-scroll" style="transition-delay: 0.3s;">
+                    <div class="achievement-num" data-target="25" data-suffix="%">0</div>
+                    <div class="achievement-label">Reduction in Production Bugs</div>
+                </div>
+                <div class="achievement-card reveal-on-scroll" style="transition-delay: 0.4s;">
+                    <div class="achievement-num" data-target="100" data-suffix="%">0</div>
+                    <div class="achievement-label">On-Time Project Delivery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hire Me Section -->
+    <section id="why-hire">
+        <div class="section-container">
+            <div class="section-title-wrapper reveal-on-scroll">
+                <span class="section-tag">Value Proposition</span>
+                <h2 class="section-title">What I Bring to Your Team</h2>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card reveal-on-scroll">
+                    <div class="why-card-header">
+                        <div class="why-card-icon"><i class="fa-solid fa-building"></i></div>
+                        <h3>Application Experience</h3>
+                    </div>
+                    <p>Built and maintained enterprise-grade web applications including procurement platforms, analytics
+                        dashboards, workflow systems, and educational portals serving large-scale business operations.
+                    </p>
+                </div>
+
+                <div class="why-card reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="why-card-header">
+                        <div class="why-card-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h3>Performance Optimization</h3>
+                    </div>
+                    <p>Focused on delivering fast, responsive user experiences through optimized rendering, efficient
+                        state management, lazy loading, and performance-driven development practices.</p>
+                </div>
+
+                <div class="why-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="why-card-header">
+                        <div class="why-card-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Clean & Maintainable Code</h3>
+                    </div>
+                    <p>Develop reusable, well-documented, and testable codebases that improve team productivity,
+                        simplify maintenance, and support long-term product growth.</p>
+                </div>
+
+                <div class="why-card reveal-on-scroll">
+                    <div class="why-card-header">
+                        <div class="why-card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <h3>Responsive UI & User Experience</h3>
+                    </div>
+                    <p>Create intuitive, accessible, and mobile-friendly interfaces that provide consistent user
+                        experiences across devices, browsers, and screen sizes.</p>
+                </div>
+
+                <div class="why-card reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="why-card-header">
+                        <div class="why-card-icon"><i class="fa-solid fa-user"></i></div>
+                        <h3>Collaborative & Business-Oriented</h3>
+                    </div>
+                    <p>Work effectively with designers, backend developers, QA teams, and stakeholders to translate
+                        business requirements into practical and high-quality software solutions.</p>
+                </div>
+
+                <div class="why-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="why-card-header">
+                        <div class="why-card-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h3>Fast Learner & Team Player</h3>
+                    </div>
+                    <p>Quick to adopt new technologies (currently learning React, TypeScript, and Flutter) and highly
+                        collaborative across remote teams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-container">
+            <div class="section-title-wrapper reveal-on-scroll">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Open to International Opportunities</h2>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info-card reveal-on-scroll">
+                    <div class="contact-header">
+                        <h3>Let's build something together</h3>
+                        <p>Available for Frontend Developer, Vue.js Developer, UI Consultant roles, and international
+                            remote positions or relocation.</p>
+                    </div>
+
+                    <div class="contact-details">
+                        <a href="mailto:benatic98@gmail.com" class="contact-link-item">
+                            <div class="contact-icon-box">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.8rem; color: var(--text-muted); margin:0;">Email</h4>
+                                <span style="font-weight: 500;">benatic98@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/benatic-vasanth/" target="_blank"
+                            class="contact-link-item">
+                            <div class="contact-icon-box">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.8rem; color: var(--text-muted); margin:0;">LinkedIn</h4>
+                                <span style="font-weight: 500;">linkedin.com/in/benatic-vasanth/</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/BenticVasanth" target="_blank" class="contact-link-item">
+                            <div class="contact-icon-box">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.8rem; color: var(--text-muted); margin:0;">GitHub</h4>
+                                <span style="font-weight: 500;">github.com/BenticVasanth</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-link-item">
+                            <div class="contact-icon-box">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.8rem; color: var(--text-muted); margin:0;">Location</h4>
+                                <span style="font-weight: 500;">Chennai, Tamil Nadu, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="form-group">
+                        <input type="text" id="form-name" class="form-input" placeholder=" " required>
+                        <label for="form-name" class="form-label">Full Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="form-email" class="form-input" placeholder=" " required>
+                        <label for="form-email" class="form-label">Email Address</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="form-message" class="form-input" placeholder=" " required></textarea>
+                        <label for="form-message" class="form-label">Message</label>
+                    </div>
+
+                    <div class="form-status"></div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Send Message
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <a href="#" class="footer-logo">Benatic<span>.</span></a>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="footer-text">&copy; 2026 Benatic Vasanth A. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Case Study Modal Overlay -->
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close Case Study">&times;</button>
+            <div class="modal-hero-img">
+                <img src="" alt="">
+            </div>
+            <div class="modal-body">
+                <div class="modal-header-info">
+                    <span class="modal-tag"></span>
+                    <h3 class="modal-title"></h3>
+                    <div class="modal-info-grid">
+                        <div class="modal-info-item">
+                            <span class="modal-info-label">Client / Org</span>
+                            <span class="modal-info-val modal-client"></span>
+                        </div>
+                        <div class="modal-info-item">
+                            <span class="modal-info-label">Role</span>
+                            <span class="modal-info-val modal-role"></span>
+                        </div>
+                        <div class="modal-info-item">
+                            <span class="modal-info-label">Duration</span>
+                            <span class="modal-info-val modal-duration"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h4 class="modal-section-title">Overview</h4>
+                    <p class="modal-desc"></p>
+                </div>
+
+                <div class="modal-section">
+                    <h4 class="modal-section-title">Technologies Used</h4>
+                    <div class="modal-tech-list project-tech" style="margin-bottom: 30px;">
+                        <!-- Populate dynamically -->
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h4 class="modal-section-title">Key Contributions & Architecture</h4>
+                    <ul class="modal-list modal-contrib-list" style="margin-bottom: 30px;">
+                        <!-- Populate dynamically -->
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4 class="modal-section-title">Measurable Impact & Deliverables</h4>
+                    <ul class="modal-list modal-metrics-list" style="color: var(--accent);">
+                        <!-- Populate dynamically -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/8dfa0f6b70.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
