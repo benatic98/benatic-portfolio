@@ -1035,10 +1035,8 @@ header.scrolled {
 
 /* Contact Section */
 .contact-wrapper {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 60px;
-    align-items: stretch;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-info-card {
@@ -1049,6 +1047,7 @@ header.scrolled {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 50%;
 }
 
 .contact-header h3 {
